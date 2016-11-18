@@ -1,0 +1,2 @@
+Use the "GW ccodes.do" Stata do-file to read out country name strings from a variable called "country" and create a variable called "ccode" with the respective Gledditsch and Ward country codes. 
+Afterwards, use "COUNTRY value label.do" to assign value labels to the country codes.
