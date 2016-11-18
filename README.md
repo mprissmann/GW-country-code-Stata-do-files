@@ -15,7 +15,7 @@ Some of the data sets I have merged with these do-files: Penn World Tables, IMF 
 Feel free to fork the files and request pulls for improvements you made to the code!
 
 ### Known issues
-The various Yemen and Serbia countries might need revisions on a data set by data set basis due to secessions and mergers. I prefer to err on the safe side and assign country codes for these countries manually.
+The various Yemen and Serbia countries might need revisions on a data set by data set basis due to secessions and mergers. I prefer to err on the safe side and assign country codes for these countries manually. For example, many cross-country-time-series applications consider Yugoslavia, Serbia/Montenegro, and Serbia to be continuations of the same country in order to preserve the time-series. However, assigning the same country code to all of those will result in non-unique country or country-year identifiers inmost data sets.
 
 ## Inspiration
 Clayton Thyne (http://www.uky.edu/~clthyn2/replace_ccode_country.do) has a similar do-file. Also, kountry, a user-written Stata command does similar conversions and more. However, last I checked, it requires heavy updating and writing my own code ended up to be faster.
