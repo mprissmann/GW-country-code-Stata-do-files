@@ -1,8 +1,9 @@
+quietly {
 // This do-file assigns Gledditsch and Ward country codes to country names.
 // Obviously, your variable containing the country name strings
 // needs to be named `country'. 
-quietly {
- 
+
+// Clean up the countrynames to decrease potential variance: 
 replace country = subinstr(country, "î"		, "i", .)
 replace country = subinstr(country, "é"		, "e", .)
 replace country = subinstr(country, "è"		, "e", .)
@@ -81,8 +82,8 @@ replace	ccode =	232		if inlist(country	,"And"	,"Andorra"						,"Andorra"		)
 replace	ccode =	235		if inlist(country	,"Prt"	,"Portugal"						,"Portugal"		)	
 replace	ccode =	240		if inlist(country								,"Hanover"		)	
 replace	ccode =	245		if inlist(country								,"Bavaria"		)	
-replace	ccode =	260		if inlist(country	,"Deu"	,"Germany"	,"Germandemocraticrepublic"					,"German Federal Republic"		)	
-replace	ccode =	265		if inlist(country								,"German Democratic Rep."		)	
+replace	ccode =	260		if inlist(country	,"Deu"	,"Germany"	,"Germanfederalrepublic"	,"Federalrepublicofgermany"				,"German Federal Republic"		)	
+replace	ccode =	265		if inlist(country								,"German Democratic Rep."	,"Germandemocraticrepublic"	)	
 replace	ccode =	267		if inlist(country								,"Baden"		)	
 replace	ccode =	269		if inlist(country								,"Saxony"		)	
 replace	ccode =	271		if inlist(country								,"Wuerttemburg"		)	
