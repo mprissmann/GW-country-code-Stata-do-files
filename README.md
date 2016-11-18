@@ -11,6 +11,9 @@ Simply rename your variable which contains the country name strings to "country"
 
 Some of the data sets I have merged with these do-files: Penn World Tables, IMF Financial Statistics, World Bank's World Development Indicators, Quality of Government data, and various energy and election statistics.
 
+## Requirements
+You will need to install user-written Stata commands `sproper', `groups' and `duplicates' once before using my files. For example, type `ssc install sproper' or `findit sproper' in the Stata command window.
+
 ## Bugs & Missing Country Names
 Feel free to fork the files and request pulls for improvements you made to the code!
 
