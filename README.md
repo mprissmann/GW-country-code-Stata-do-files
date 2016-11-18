@@ -25,3 +25,7 @@ Clayton Thyne (http://www.uky.edu/~clthyn2/replace_ccode_country.do) has a simil
 
 ## Keywords
 how to assign Gledditsch and Ward country codes, merge data sets on country codes
+
+## FAQ
+Q: Why is there so much white space in the code?
+A: I try to make the code nice and efficient. The extra white space in the do-files is because I actually create the code in MS Excel because of its nice repetitive features.
