@@ -1,10 +1,10 @@
-## Synopsis
+## Synopsis	(aka, the short version)
 
 Use the "GW ccodes.do" Stata do-file to read out country name strings from a variable called "country" and create a variable called "ccode" with the respective Gledditsch and Ward country codes. 
 Afterwards, use the file "COUNTRY value label.do" to assign value labels to the country codes.
 
 
-## What It Does
+## What It Does (aka, the long version)
 The Stata do-file reads out country name strings and assigns the Gledditsch and Ward country codes. For some Islands and small territories which come up in many data sets I have also added my own, arbitrary, country codes in the 2000s and 3000s.
 Simply rename your variable which contains the country name strings to "country" and run the do-files to assign country codes (ccodes) and value labels.
 
